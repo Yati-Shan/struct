@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   struct user{ 
+    int age;
+    int id;
+    char name;
+    float incoming;
+    
+   };
+   struct user info[10];
+   int k,i;
+   printf("how many information do you want to add:\n");
+   scanf("%d",&k);
+   for(i=0;i<k;i++){
+    printf("enter your age:\n");
+    scanf("%d",&info[i].age);
+    printf("enter your id:\n");
+    scanf("%d",&info[i].id);
+    printf("enter your name:\n");
+    scanf("%c",&info[i].name);
+    printf("enter your incoming:\n");
+    scanf("%f",&info[i].incoming);
+   } 
+     for(i=0;i<k;i++){
+    printf("enter your age:%d\n",info[i].age);
+    printf("enter your id:%d\n",info[i].id);
+    printf("enter your name:%c\n",info[i].name);
+    printf("enter your incoming:%f\n",info[i].incoming);
+
+   } 
+
+    return main();
+}
